@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  record_type: 1
+  profile_group: MyString
+  customer_name: MyString
+  service_address_1: MyString
+  service_address_2: MyString
+  service_city: MyString
+  service_state: MyString
+  service_postal_code: MyString
+  billing_address_1: MyString
+  billing_address_2: MyString
+  billing_city: MyString
+  billing_state: MyString
+  billing_Postal_code: MyString
+  billing_country_code: MyString
+  EDU_tariff_code: MyString
+  EDU_tariff_description: MyString
+  rider: MyString
+  monthly_billing_date_from: MyString
+  monthly_billing_date_to: MyString
+
+two:
+  record_type: 1
+  profile_group: MyString
+  customer_name: MyString
+  service_address_1: MyString
+  service_address_2: MyString
+  service_city: MyString
+  service_state: MyString
+  service_postal_code: MyString
+  billing_address_1: MyString
+  billing_address_2: MyString
+  billing_city: MyString
+  billing_state: MyString
+  billing_Postal_code: MyString
+  billing_country_code: MyString
+  EDU_tariff_code: MyString
+  EDU_tariff_description: MyString
+  rider: MyString
+  monthly_billing_date_from: MyString
+  monthly_billing_date_to: MyString
