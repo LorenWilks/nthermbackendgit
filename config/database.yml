@@ -1,9 +1,12 @@
 default: &default
   adapter: mysql2
-  encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  socket: /var/run/mysqld/mysqld.sock
-  timeout: 5000
+  encoding: utf8mb4
+  collation: utf8mb4_unicode_ci
+  host: localhost
+  username: ntherm
+  password: database
+  database: leads_database_default
+
 
 development:
   <<: *default

@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_06_09_192419) do
-  create_table "leads", force: :cascade do |t|
+  create_table "leads", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "record_type"
     t.string "profile_group"
     t.string "customer_name"
@@ -27,10 +27,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_09_192419) do
     t.string "billing_postal_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["customer_name", "service_address_1", "service_city", "service_state", "service_postal_code"], name: "unique_lead", unique: true
+    t.index ["customer_name", "service_postal_code"], name: "unique_lead", unique: true
   end
 
-  create_table "operating_companies", force: :cascade do |t|
+  create_table "operating_companies", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.integer "record_type"
     t.string "date_of_file"
     t.string "LDC_name"
@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_09_192419) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "service_delivery_points", force: :cascade do |t|
+  create_table "service_delivery_points", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.integer "record_type"
     t.string "profile_group"
     t.string "customer_name"
@@ -65,7 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_09_192419) do
     t.integer "operating_company_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "username"
     t.string "email"
     t.string "password_digest"
